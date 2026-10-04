@@ -19,25 +19,23 @@ export function Privacy() {
       </p>
       <h2>Visiting this website</h2>
       <p>
-        Visits are counted with <a href="https://www.goatcounter.com">GoatCounter</a>. It sets no cookies, doesn't track you across sites and stores no personal
+        Visits are counted with a privacy-friendly analytics service. It sets no cookies, doesn't track you across sites and stores no personal
         data, only totals: the page viewed, the referring site, browser and system, screen size, and a country derived from your IP address, which itself is not
         stored. Download clicks are counted the same way.
       </p>
       <p>If your browser blocks the counting script, nothing is counted and the site works the same.</p>
       <h2>Hosting</h2>
       <p>
-        The site is hosted on <a href="https://www.netlify.com/privacy/">Netlify</a>, which processes your IP address to deliver pages and may keep it briefly in
-        logs for security. We don't use those logs.
+        Our hosting provider processes your IP address to deliver pages and may keep it briefly in logs for security. We don't use those logs.
       </p>
       <h2>Downloads</h2>
       <p>
-        The app and the mods come from GitHub, so{" "}
-        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> applies to those requests.
+        The app and the mods are downloaded from the service that hosts the project's code, and its own privacy policy applies to those requests.
       </p>
       <h2>The app</h2>
       <p>
-        Modzarella has no accounts, telemetry or analytics. It only contacts GitHub to fetch the mod list, the mods you install and the BepInEx mod loader. Your
-        settings stay in a file on your computer.
+        Modzarella has no accounts, telemetry or analytics. It only downloads the mod list, the mods you install and the mod loader. Your settings stay in a
+        file on your computer.
       </p>
       <h2>Mods</h2>
       <p>
@@ -46,12 +44,11 @@ export function Privacy() {
       </p>
       <h2>Your rights</h2>
       <p>
-        We hold no personal data about you, so there's nothing to show, correct or delete. GitHub, Netlify and GoatCounter explain how to exercise your rights
-        with them.
+        We hold no personal data about you, so there's nothing to show, correct or delete. The services above explain how to exercise your rights with them.
       </p>
       <h2>Changes and contact</h2>
       <p>
-        Updates are published here with a new date. Questions? Open an issue on <a href="https://github.com/ModzarellaHQ/Modzarella/issues">GitHub</a>.
+        Updates are published here with a new date. Questions? Ask in the project's <a href="https://github.com/ModzarellaHQ/Modzarella/issues">issue tracker</a>.
       </p>
     </Page>
   );
@@ -95,7 +92,7 @@ export function Terms() {
       </p>
       <h2>Changes and contact</h2>
       <p>
-        Updates are published here with a new date. Questions? Open an issue on <a href="https://github.com/ModzarellaHQ/Modzarella/issues">GitHub</a>.
+        Updates are published here with a new date. Questions? Ask in the project's <a href="https://github.com/ModzarellaHQ/Modzarella/issues">issue tracker</a>.
       </p>
     </Page>
   );
