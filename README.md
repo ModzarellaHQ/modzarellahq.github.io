@@ -1,4 +1,4 @@
-# modzarella.dev
+# modza.space
 
 Website for [Modzarella](https://github.com/ModzarellaHQ/Modzarella). Vite, SolidJS and Tailwind, prerendered to static HTML and deployed on Netlify. Pages live in `src/pages.tsx`.
 

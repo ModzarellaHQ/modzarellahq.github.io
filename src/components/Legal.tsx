@@ -14,7 +14,7 @@ export function Privacy() {
   return (
     <Page title="Privacy">
       <p>
-        Modzarella is a free, open-source community project. This page explains what happens to your data on modzarella.dev, when you download the app and when
+        Modzarella is a free, open-source community project. This page explains what happens to your data on modza.space, when you download the app and when
         you use it. In short: we collect nothing that identifies you.
       </p>
       <h2>Visiting this website</h2>
@@ -57,7 +57,7 @@ export function Privacy() {
 export function Terms() {
   return (
     <Page title="Terms">
-      <p>These terms cover the modzarella.dev website, the Modzarella app and the mods in the Modz catalogue. By using them you agree to these terms.</p>
+      <p>These terms cover the modza.space website, the Modzarella app and the mods in the Modz catalogue. By using them you agree to these terms.</p>
       <h2>Licence</h2>
       <p>
         Modzarella and the Modz mods are free software under the{" "}
