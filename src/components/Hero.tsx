@@ -13,7 +13,7 @@ export default function Hero() {
           Modzarella installs the mod loader, keeps your mods up to date and starts the game. Tick the mods you want and press Play.
         </p>
         <div class="mt-7 flex flex-wrap items-center gap-3">
-          <a id="download" class="btn btn-accent gap-1" href={link("mac")} data-platform="mac" data-goatcounter-click="download-mac">
+          <a id="download" class="btn btn-accent gap-1" href={link("mac")} data-platform="mac">
             Download for <span>{downloads.mac.label}</span>
           </a>
           <a class="btn" href={releases}>All releases</a>
@@ -24,7 +24,7 @@ export default function Hero() {
             {(p, i) => (
               <>
                 {i() > 0 && ", "}
-                <a class="underline underline-offset-4 hover:text-text" href={link(p)} data-platform={p} data-goatcounter-click={`download-${p}`}>
+                <a class="underline underline-offset-4 hover:text-text" href={link(p)} data-platform={p}>
                   {downloads[p].label}
                 </a>
               </>

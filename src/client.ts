@@ -7,7 +7,6 @@ const alt = platform && document.querySelector<HTMLAnchorElement>(`a[data-platfo
 if (main && alt) {
   const label = main.querySelector("span")!;
   [main.dataset.platform, alt.dataset.platform] = [alt.dataset.platform, main.dataset.platform];
-  [main.dataset.goatcounterClick, alt.dataset.goatcounterClick] = [alt.dataset.goatcounterClick, main.dataset.goatcounterClick];
   const href = main.getAttribute("href")!;
   main.setAttribute("href", alt.getAttribute("href")!);
   alt.setAttribute("href", href);
