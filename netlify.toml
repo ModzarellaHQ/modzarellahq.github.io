@@ -23,3 +23,9 @@
   for = "/screens/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/mods/*"
+  to = "https://modza-mods.netlify.app/:splat"
+  status = 200
+  force = true
