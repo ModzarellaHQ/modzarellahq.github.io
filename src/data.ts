@@ -23,7 +23,7 @@ export const mods = [
   {
     name: "Rocket Toilet",
     image: "toilet",
-    text: "Sit down, hold Space and climb on a column of poop. Steer with WASD, hover with Ctrl.",
+    text: "Sit down and blast off on a column of poop, then steer it through the air.",
   },
   {
     name: "Euphoria",

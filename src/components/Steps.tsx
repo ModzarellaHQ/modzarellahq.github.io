@@ -4,7 +4,7 @@ import Picture from "./Picture";
 const steps = [
   { title: "Download Modzarella", text: "One app for macOS, Windows or Linux. It finds Cheese Rolling in your Steam library." },
   { title: "Tick the mods you want", text: "They install on the spot. The mod loader sets itself up the first time." },
-  { title: "Press Play, then F1", text: "Pick Play Offline in the game. F1 opens the mod menu for settings and keys." },
+  { title: "Press Play", text: "Pick Play Offline in the game. The mod menu has every setting, right in the game." },
 ];
 
 export default function Steps() {
