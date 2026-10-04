@@ -1,60 +1,25 @@
 @import "tailwindcss";
 
-@font-face { font-family: "Archivo"; src: url(/fonts/archivo.woff2) format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Plex Mono"; src: url(/fonts/plexmono-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Plex Mono"; src: url(/fonts/plexmono-600.woff2) format("woff2"); font-weight: 600; font-display: swap; }
-
 @theme {
-  --color-wood: #201b16;
-  --color-panel: #2b241d;
-  --color-panel-low: #241e18;
-  --color-inset: #120e0b;
-  --color-edge: #0d0a08;
-  --color-label: #f0e6d2;
-  --color-dim: #a39581;
-  --color-wax: #c8202f;
-  --color-wax-light: #d8323f;
-  --color-wax-dark: #8f1420;
-  --color-brass: #d9a441;
-  --color-brass-light: #e8c56e;
-  --color-cap: #efe7d8;
-  --color-cap-low: #cbbfa9;
-  --color-cap-edge: #7d6f5b;
-  --font-sans: "Archivo", "Helvetica Neue", "Segoe UI", sans-serif;
-  --font-mono: "Plex Mono", Menlo, Consolas, monospace;
+  --color-bg: #18181b;
+  --color-row: #222226;
+  --color-line: #303036;
+  --color-text: #ececef;
+  --color-dim: #9a9aa3;
+  --color-accent: #f2b33d;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
 }
 
 @layer base {
-  html { background: var(--color-wood); color-scheme: dark; }
-  body { @apply bg-wood font-sans text-label antialiased; overflow-x: clip; }
+  html { background: var(--color-bg); color-scheme: dark; }
+  body { @apply bg-bg font-sans text-text antialiased; overflow-x: clip; }
   h1, h2, h3 { text-wrap: balance; }
-  :focus-visible { outline: 2px solid var(--color-brass); outline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 }
 
 @layer components {
-  .panel {
-    @apply rounded-xl border border-edge bg-linear-to-b from-panel to-panel-low;
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / .07), 0 18px 40px rgb(0 0 0 / .35);
-  }
-  .btn {
-    @apply inline-flex items-center gap-2 rounded-lg border border-edge bg-linear-to-b from-[#382f26] to-panel px-4 py-2.5 font-bold text-label;
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / .09), 0 2px 0 var(--color-edge);
-  }
-  .btn:hover { @apply from-[#43392e] to-[#332a21]; }
-  .btn:active { transform: translateY(1px); }
-  .btn-wax {
-    @apply border-wax-dark from-wax-light to-wax text-white;
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / .35), 0 2px 0 var(--color-edge);
-  }
-  .btn-wax:hover { @apply from-[#e5404c] to-wax-light; }
-  .keycap {
-    @apply inline-flex min-w-7 items-center justify-center rounded-md border border-edge bg-linear-to-b from-cap to-cap-low px-2 pb-1 pt-0.5 font-mono text-xs font-semibold text-[#241d16];
-    box-shadow: 0 2px 0 var(--color-cap-edge), 0 3px 0 var(--color-edge);
-  }
-  .label { @apply font-mono text-xs font-semibold uppercase tracking-[0.14em] text-brass; }
-  .groove { @apply h-px bg-edge; box-shadow: 0 1px 0 rgb(255 255 255 / .04); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  .btn { @apply inline-flex items-center rounded bg-[#3c3c44] px-4 py-2 text-sm font-medium hover:bg-[#4c4c56]; }
+  .btn-accent { @apply bg-accent font-semibold text-bg hover:bg-[#f7c766]; }
+  .key { @apply inline-block rounded bg-row px-1.5 py-0.5 font-mono text-xs text-dim; }
 }
