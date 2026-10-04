@@ -20,7 +20,7 @@ function Line(props: { text: string }) {
 
 export default function MakeAMod() {
   return (
-    <section id="make" class="mx-auto grid max-w-5xl items-center gap-10 border-t border-line px-5 py-16 lg:grid-cols-[1fr_1.2fr]">
+    <section id="make" class="wrap grid items-center gap-10 py-16 lg:grid-cols-[1fr_1.2fr]">
       <div>
         <h2 class="text-2xl font-bold">Make a mod</h2>
         <p class="mt-3 max-w-md text-dim">

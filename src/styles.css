@@ -18,14 +18,25 @@
 }
 
 @layer base {
-  html { background: var(--color-bg); color-scheme: dark; }
+  html { background: var(--color-bg); color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 5rem; scrollbar-width: thin; scrollbar-color: var(--color-control) var(--color-bg); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
+  ::-webkit-scrollbar-thumb { background: var(--color-control); border: 2px solid var(--color-bg); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-control-hover); }
   body { @apply bg-bg font-sans text-text antialiased; overflow-x: clip; }
   h1, h2, h3 { text-wrap: balance; }
   :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 }
 
 @layer components {
   .btn { @apply inline-flex items-center bg-control px-4 py-2 text-sm font-medium hover:bg-control-hover; }
   .btn-accent { @apply bg-accent font-semibold text-on-accent hover:bg-accent-hover; }
-  .key { @apply inline-block bg-surface px-1.5 py-0.5 font-mono text-xs text-dim; }
+  /* content width, so section separators stop at the content instead of the screen edge */
+  .wrap { width: min(64rem, 100% - 2.5rem); margin-inline: auto; }
+  main > .wrap + .wrap { @apply border-t border-line; }
+  footer.wrap { @apply border-t border-line; }
+  .legal h2 { @apply mt-8 font-semibold; }
+  .legal p { @apply mt-2 text-dim; }
+  .legal a { @apply text-text underline underline-offset-4; }
 }
