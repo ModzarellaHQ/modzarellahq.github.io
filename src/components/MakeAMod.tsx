@@ -27,6 +27,9 @@ export default function MakeAMod() {
           A mod is a Lua file, so there's nothing to compile.
           Settings and keys you declare show up in the mod menu by themselves. Edit the file, press Reload in game, and see the change.
         </p>
+        <p class="mt-3 max-w-md text-dim">
+          Seats, vehicles, holding objects, muscles, models, camera and effects come built in, so a new car or gadget is mostly a model and some tuning.
+        </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a class="btn" href="https://github.com/ModzarellaHQ/Modzarella/blob/main/docs/lua-api.md">Read the Lua API</a>
           <a class="btn" href="https://github.com/ModzarellaHQ/modz">Browse the mods</a>
