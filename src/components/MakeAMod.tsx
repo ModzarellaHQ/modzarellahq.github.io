@@ -29,7 +29,7 @@ export default function MakeAMod() {
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a class="btn" href="https://github.com/ModzarellaHQ/Modzarella/blob/main/docs/lua-api.md">Read the Lua API</a>
-          <a class="btn" href="https://github.com/ModzarellaHQ/Modz">Browse the mods</a>
+          <a class="btn" href="https://github.com/ModzarellaHQ/modz">Browse the mods</a>
         </div>
       </div>
       <figure class="overflow-hidden border border-line">
