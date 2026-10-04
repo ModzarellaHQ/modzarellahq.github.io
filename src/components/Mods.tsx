@@ -11,7 +11,7 @@ export default function Mods() {
         <For each={mods}>
           {(mod) => (
             <article>
-              <Picture name={mod.image} alt={mod.name} width={1600} height={900} sizes="(min-width: 1024px) 480px, (min-width: 640px) 50vw, 100vw" />
+              <Picture name={mod.image} alt={mod.name} width={1440} height={810} sizes="(min-width: 1024px) 480px, (min-width: 640px) 50vw, 100vw" />
               <h3 class="mt-3 font-semibold">{mod.name}</h3>
               <p class="mt-1 text-dim">{mod.text}</p>
             </article>
