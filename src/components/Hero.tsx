@@ -39,8 +39,8 @@ export default function Hero() {
         </For>
       </p>
       <div class="mt-12 grid gap-4 md:grid-cols-2">
-        <img class="w-full rounded border border-line" src="/screens/app.jpg" alt="The Modzarella app" width="1600" height="862" />
-        <img class="w-full rounded border border-line" src="/screens/menu.jpg" alt="The F1 mod menu in game" width="1600" height="900" />
+        <img class="w-full border border-line" src="/screens/app.jpg" alt="The Modzarella app" width="1600" height="862" />
+        <img class="w-full border border-line" src="/screens/menu.jpg" alt="The F1 mod menu in game" width="1600" height="900" />
       </div>
     </section>
   );

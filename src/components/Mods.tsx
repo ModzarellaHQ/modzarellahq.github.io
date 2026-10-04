@@ -9,7 +9,7 @@ export default function Mods() {
         <For each={mods}>
           {(mod) => (
             <article>
-              <img class="aspect-video w-full rounded border border-line object-cover" src={mod.image} alt={mod.name} loading="lazy" width="1600" height="900" />
+              <img class="aspect-video w-full border border-line object-cover" src={mod.image} alt={mod.name} loading="lazy" width="1600" height="900" />
               <h3 class="mt-3 font-semibold">{mod.name}</h3>
               <p class="mt-1 text-dim">{mod.text}</p>
               <Show when={mod.keys.length}>

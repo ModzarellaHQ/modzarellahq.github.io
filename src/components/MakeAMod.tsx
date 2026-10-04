@@ -32,9 +32,9 @@ export default function MakeAMod() {
           <a class="btn" href="https://github.com/ModzarellaHQ/Modz">Browse the mods</a>
         </div>
       </div>
-      <figure class="overflow-hidden rounded border border-line">
-        <figcaption class="border-b border-line bg-row px-4 py-2 font-mono text-xs text-dim">mods/superjump/main.lua</figcaption>
-        <pre class="overflow-x-auto bg-[#0f0f11] px-5 py-4 font-mono text-[13px] leading-relaxed"><For each={example.split("\n")}>{(line) => <Line text={line} />}</For></pre>
+      <figure class="overflow-hidden border border-line">
+        <figcaption class="border-b border-line bg-surface px-4 py-2 font-mono text-xs text-dim">mods/superjump/main.lua</figcaption>
+        <pre class="overflow-x-auto bg-field px-5 py-4 font-mono text-[13px] leading-relaxed"><For each={example.split("\n")}>{(line) => <Line text={line} />}</For></pre>
       </figure>
     </section>
   );
