@@ -5,9 +5,13 @@ The website for [Modzarella](https://github.com/ModzarellaHQ/Modzarella). Vite, 
 ```sh
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # outputs dist/
+npm run build    # prerendered pages in dist/
 ```
 
-Content lives in `src/data.ts`. Screenshots and fonts are in `public/`, copied from the Modzarella repo.
+Every page is rendered to static HTML at build time (`src/server.tsx`, `prerender.js`), so visitors get no framework JavaScript. The only script picks the right download button (`src/client.ts`).
 
-Netlify builds from `netlify.toml`. Analytics go to the GoatCounter site `modzarella` (see `index.html`).
+- Pages: `src/pages.tsx`. Content: `src/data.ts` and `src/components/`.
+- Colours: `src/theme.css`, copied from the Modzarella repo's `assets/theme.css`.
+- Screenshots: `public/screens/`, AVIF and WebP at 400, 800 and full width.
+- Security headers and the content security policy: `netlify.toml`.
+- Analytics: GoatCounter site `modzarella`, its script self-hosted as `public/count.js`.
