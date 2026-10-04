@@ -13,7 +13,7 @@ export const mods = [
   {
     name: "BMW",
     image: "/screens/bmw.jpg",
-    text: "Drive an M2 down the hill. It dents where you hit things, smokes when it's hurt, and you can fly out of the windscreen.",
+    text: "Drive an M2 down the hill with real engine sounds, headlights and nitro.",
     keys: ["E", "WASD", "Shift", "H"],
   },
   {
@@ -29,14 +29,14 @@ export const mods = [
     keys: ["T", "Space", "Ctrl"],
   },
   {
-    name: "Gore",
-    image: "/screens/gore.jpg",
-    text: "Limbs come off at the joint, bodies bleed out, and ragdolls brace and flinch instead of flopping.",
+    name: "Euphoria",
+    image: "/screens/euphoria.jpg",
+    text: "Bodies brace, flinch and clutch their wounds instead of flopping. They bleed, lose limbs and die.",
     keys: [],
   },
 ];
 
-export const builtIn = ["Free mouse camera", "First person", "Endless rounds", "Frozen bots", "Slow motion"];
+export const builtIn = ["Freecam", "Mouse look", "First person", "Endless rounds", "Frozen bots", "Slow motion"];
 
 export const example = `local key = setting.key{ name = "Super jump", default = "J" }
 
