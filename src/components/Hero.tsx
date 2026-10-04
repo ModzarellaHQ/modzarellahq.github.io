@@ -1,6 +1,5 @@
 import { For } from "solid-js";
 import { downloads, releases, type Platform } from "../data";
-import Picture from "./Picture";
 
 const link = (p: Platform) => `${releases}/download/${downloads[p].file}`;
 const others = (Object.keys(downloads) as Platform[]).filter((p) => p !== "mac");
@@ -8,9 +7,9 @@ const others = (Object.keys(downloads) as Platform[]).filter((p) => p !== "mac")
 // rendered for macOS; client.ts swaps in the visitor's platform
 export default function Hero() {
   return (
-    <section class="wrap grid min-h-svh items-center gap-10 pb-12 pt-28 lg:grid-cols-[1fr_1.15fr]">
+    <section class="wrap grid min-h-svh items-center gap-12 pb-12 pt-28 lg:grid-cols-[1fr_1fr]">
       <div>
-        <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Mods for Cheese Rolling</h1>
+        <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Mods for Cheese Rolling</h1>
         <p class="mt-4 max-w-md text-lg text-dim">
           Modzarella installs the mod loader, keeps your mods up to date and starts the game. Tick the mods you want and press Play.
         </p>
@@ -34,7 +33,10 @@ export default function Hero() {
           </For>
         </p>
       </div>
-      <Picture name="menu" alt="The F1 mod menu over the game" width={1280} height={720} sizes="(min-width: 1024px) 540px, 100vw" eager />
+      <picture class="hero-shot">
+        <source type="image/avif" srcset="/screens/menu.avif" />
+        <img class="w-full" src="/screens/menu.webp" alt="The in-game mod menu" width="620" height="518" fetchpriority="high" />
+      </picture>
     </section>
   );
 }
