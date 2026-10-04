@@ -18,12 +18,7 @@ export function Privacy() {
         you use it. In short: we collect nothing that identifies you.
       </p>
       <h2>Visiting this website</h2>
-      <p>
-        Visits are counted with a privacy-friendly analytics service. It sets no cookies, doesn't track you across sites and stores no personal
-        data, only totals: the page viewed, the referring site, browser and system, screen size, and a country derived from your IP address, which itself is not
-        stored. Download clicks are counted the same way.
-      </p>
-      <p>If your browser blocks the counting script, nothing is counted and the site works the same.</p>
+      <p>The site uses no analytics, no tracking and no cookies.</p>
       <h2>Hosting</h2>
       <p>
         Our hosting provider processes your IP address to deliver pages and may keep it briefly in logs for security. We don't use those logs.
