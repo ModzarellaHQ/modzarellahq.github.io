@@ -3,7 +3,6 @@ import { defineConfig, type Plugin } from "vite";
 import solid from "vite-plugin-solid";
 import tailwindcss from "@tailwindcss/vite";
 
-// serve 404.html for unknown URLs in preview, like Netlify
 const notFound = (): Plugin => ({
   name: "not-found",
   configurePreviewServer(server) {

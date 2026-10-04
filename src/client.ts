@@ -1,6 +1,5 @@
 import "./styles.css";
 
-// pages are rendered for macOS; swap in the visitor's platform
 const ua = navigator.userAgent;
 const platform = /Windows/.test(ua) ? "windows" : /Linux|X11/.test(ua) && !/Android/.test(ua) ? "linux" : null;
 const main = document.getElementById("download");
