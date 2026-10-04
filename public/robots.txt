@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://modzarella.dev/sitemap.xml
