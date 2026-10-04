@@ -1,4 +1,4 @@
-// Fills dist/index.html with each prerendered page, then drops the server bundle.
+// writes each prerendered page into the built template
 import { readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const { pages, render } = await import("./dist-ssr/server.js");

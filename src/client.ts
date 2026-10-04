@@ -1,6 +1,6 @@
 import "./styles.css";
 
-// the page is rendered for macOS; swap the main download button for the visitor's platform
+// pages are rendered for macOS; swap in the visitor's platform
 const ua = navigator.userAgent;
 const platform = /Windows/.test(ua) ? "windows" : /Linux|X11/.test(ua) && !/Android/.test(ua) ? "linux" : null;
 const main = document.getElementById("download");

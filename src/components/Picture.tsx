@@ -1,4 +1,3 @@
-// AVIF with a WebP fallback, at 400px, 800px and full width
 export default function Picture(props: { name: string; alt: string; width: number; height: number; sizes: string; eager?: boolean }) {
   const set = (ext: string) => `/screens/${props.name}-400.${ext} 400w, /screens/${props.name}-800.${ext} 800w, /screens/${props.name}-${props.width}.${ext} ${props.width}w`;
   return (

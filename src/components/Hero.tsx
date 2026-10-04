@@ -4,7 +4,6 @@ import { downloads, releases, type Platform } from "../data";
 const link = (p: Platform) => `${releases}/download/${downloads[p].file}`;
 const others = (Object.keys(downloads) as Platform[]).filter((p) => p !== "mac");
 
-// rendered for macOS; client.ts swaps in the visitor's platform
 export default function Hero() {
   return (
     <section class="wrap grid min-h-svh items-center gap-12 pb-12 pt-28 lg:grid-cols-[1fr_1fr]">

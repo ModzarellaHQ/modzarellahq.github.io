@@ -19,7 +19,7 @@
 
 @layer base {
   html { background: var(--color-bg); color-scheme: dark; font-size: 106.25%; scroll-behavior: smooth; scroll-padding-top: 5rem; }
-  /* square scrollbars; Firefox has no ::-webkit-scrollbar, so it gets the standard properties */
+  /* Firefox only; others use ::-webkit-scrollbar */
   @supports not selector(::-webkit-scrollbar) { html { scrollbar-width: thin; scrollbar-color: var(--color-control) var(--color-bg); } }
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-track { background: var(--color-bg); }
@@ -34,14 +34,12 @@
 @layer components {
   .btn { @apply inline-flex items-center bg-control px-4 py-2 text-sm font-medium hover:bg-control-hover; }
   .btn-accent { @apply bg-accent font-semibold text-on-accent hover:bg-accent-hover; }
-  /* content width, so section separators stop at the content instead of the screen edge */
   .wrap { width: min(64rem, 100% - 2.5rem); margin-inline: auto; }
   main > .wrap + .wrap { @apply border-t border-line; }
   footer.wrap { @apply border-t border-line; }
   .legal h2 { @apply mt-8 font-semibold; }
   .legal p { @apply mt-2 text-dim; }
   .legal a { @apply text-text underline underline-offset-4; }
-  /* the in-game menu, tilted like a window lying on a desk */
   .hero-shot { display: block; transform: perspective(1400px) rotateY(-16deg) rotateX(6deg) rotateZ(1deg); transform-origin: left center; }
   @media (max-width: 1023px) { .hero-shot { transform: perspective(1400px) rotateY(-8deg) rotateX(4deg); } }
 }

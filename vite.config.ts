@@ -3,7 +3,7 @@ import { defineConfig, type Plugin } from "vite";
 import solid from "vite-plugin-solid";
 import tailwindcss from "@tailwindcss/vite";
 
-// `vite preview` answers unknown URLs with the home page; serve dist/404.html like Netlify does
+// serve 404.html for unknown URLs in preview, like Netlify
 const notFound = (): Plugin => ({
   name: "not-found",
   configurePreviewServer(server) {
