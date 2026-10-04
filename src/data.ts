@@ -12,27 +12,23 @@ export const downloads: Record<Platform, { label: string; file: string }> = {
 export const mods = [
   {
     name: "BMW",
-    image: "/screens/bmw.jpg",
+    image: "bmw",
     text: "Drive an M2 down the hill with real engine sounds, headlights and nitro.",
-    keys: ["E", "WASD", "Shift", "H"],
   },
   {
     name: "Guns",
-    image: "/screens/guns.jpg",
-    text: "A Glock 17 and an AK-47 with recoil, aiming and reloads. Works in first person too.",
-    keys: ["1", "2", "LMB", "RMB", "R"],
+    image: "guns",
+    text: "A Glock 17 and an AK-47 with recoil, aiming down sights and reloads, in third and first person.",
   },
   {
     name: "Rocket Toilet",
-    image: "/screens/toilet.jpg",
+    image: "toilet",
     text: "Sit down, hold Space and climb on a column of poop. Steer with WASD, hover with Ctrl.",
-    keys: ["T", "Space", "Ctrl"],
   },
   {
     name: "Euphoria",
-    image: "/screens/euphoria.jpg",
+    image: "euphoria",
     text: "Bodies brace, flinch and clutch their wounds instead of flopping. They bleed, lose limbs and die.",
-    keys: [],
   },
 ];
 

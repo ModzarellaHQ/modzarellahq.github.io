@@ -1,22 +1,19 @@
-import { For, Show } from "solid-js";
+import { For } from "solid-js";
 import { builtIn, mods } from "../data";
+import Picture from "./Picture";
 
 export default function Mods() {
   return (
-    <section id="mods" class="mx-auto max-w-5xl px-5 py-16">
-      <h2 class="text-2xl font-bold">Mods</h2>
-      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+    <section id="mods" class="wrap py-16">
+      <h2 class="text-2xl font-bold">A few to start with</h2>
+      <p class="mt-2 max-w-xl text-dim">Some of the mods you can install from the app. Anyone can make more.</p>
+      <div class="mt-6 grid gap-8 sm:grid-cols-2">
         <For each={mods}>
           {(mod) => (
             <article>
-              <img class="aspect-video w-full border border-line object-cover" src={mod.image} alt={mod.name} loading="lazy" width="1600" height="900" />
+              <Picture name={mod.image} alt={mod.name} width={1600} height={900} sizes="(min-width: 1024px) 480px, (min-width: 640px) 50vw, 100vw" />
               <h3 class="mt-3 font-semibold">{mod.name}</h3>
               <p class="mt-1 text-dim">{mod.text}</p>
-              <Show when={mod.keys.length}>
-                <div class="mt-2 flex flex-wrap gap-1.5">
-                  <For each={mod.keys}>{(key) => <span class="key">{key}</span>}</For>
-                </div>
-              </Show>
             </article>
           )}
         </For>
