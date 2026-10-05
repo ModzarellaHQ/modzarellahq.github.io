@@ -11,14 +11,14 @@ export const downloads: Record<Platform, { label: string; file: string }> = {
 
 export const mods = [
   {
-    name: "BMW",
+    name: "Sports Cars",
     image: "bmw",
-    text: "Drive an M2 down the hill with real engine sounds, headlights and nitro.",
+    text: "Pick a BMW M2, M3 E30, Toyota AE86 or Skyline R34 and race down the hill with nitro.",
   },
   {
     name: "Guns",
     image: "guns",
-    text: "A Glock 17 and an AK-47 with recoil, aiming down sights and reloads, in third and first person.",
+    text: "A Glock 17, an AK-47, an M4A1 and a Panzerschreck rocket launcher, in third and first person.",
   },
   {
     name: "Rocket Toilet",
