@@ -13,7 +13,7 @@ export const mods = [
   {
     name: "Sports Cars",
     image: "bmw",
-    text: "Pick a BMW M2, M3 E30, Toyota AE86 or Skyline R34 and race down the hill with nitro.",
+    text: "Pick a BMW M2, Toyota AE86 or Skyline R34 and race down the hill with nitro.",
   },
   {
     name: "Guns",
