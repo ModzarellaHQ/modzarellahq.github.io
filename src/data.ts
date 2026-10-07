@@ -1,4 +1,5 @@
 export const releases = "https://github.com/ModzarellaHQ/Modzarella/releases/latest";
+export const allReleases = "https://github.com/ModzarellaHQ/Modzarella/releases";
 
 export type Platform = "mac" | "mac-intel" | "windows" | "linux";
 

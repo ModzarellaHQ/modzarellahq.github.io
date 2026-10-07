@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import { downloads, releases, type Platform } from "../data";
+import { allReleases, downloads, releases, type Platform } from "../data";
 
 const link = (p: Platform) => `${releases}/download/${downloads[p].file}`;
 const others = (Object.keys(downloads) as Platform[]).filter((p) => p !== "mac");
@@ -16,7 +16,7 @@ export default function Hero() {
           <a id="download" class="btn btn-accent gap-1" href={link("mac")} data-platform="mac">
             Download for <span>{downloads.mac.label}</span>
           </a>
-          <a class="btn" href={releases}>All releases</a>
+          <a class="btn" href={allReleases}>All releases</a>
         </div>
         <p class="mt-3 text-sm text-dim">
           Also for{" "}
